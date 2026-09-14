@@ -1,0 +1,115 @@
+.page {
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  text-align: center;
+  animation: riseIn 0.32s ease;
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.eyebrow {
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.gameName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.scoreRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.scoreBlock {
+  flex: 1;
+  background: var(--bg-void);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.scoreLabel {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.scoreValue {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.rewardBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(242, 181, 68, 0.14), rgba(242, 181, 68, 0.04));
+  border: 1px solid rgba(242, 181, 68, 0.3);
+  margin-bottom: 22px;
+  transform: scale(0.98);
+  transition: transform 0.3s ease;
+}
+
+.rewardBoxRevealed {
+  transform: scale(1.03);
+}
+
+.rewardIcon {
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+}
+
+.rewardLabel {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.rewardValue {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--gold-soft);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirmText {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

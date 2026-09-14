@@ -1,0 +1,99 @@
+.section {
+  margin-bottom: 48px;
+}
+
+.heading {
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--bg-panel-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.details {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.entryBadge {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--teal);
+  background: rgba(51, 224, 194, 0.12);
+  border-radius: 999px;
+  padding: 2px 7px;
+}
+
+.entryBadgeSve {
+  color: var(--gold);
+  background: rgba(242, 181, 68, 0.14);
+}
+
+.prize {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.prizeValue {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,154 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hudStat {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 78px;
+}
+
+.hudLabel {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hudValue {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.hudControls {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.iconBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.iconBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.board {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  gap: 1px;
+  padding: 6px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  touch-action: none;
+  user-select: none;
+}
+
+.cell {
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 3px;
+}
+
+.body {
+  background: var(--accent);
+  opacity: 0.75;
+  border-radius: 4px;
+}
+
+.head {
+  background: var(--accent);
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.food {
+  background: var(--gold);
+  border-radius: 50%;
+  animation: foodPulse 1s ease-in-out infinite;
+}
+
+@keyframes foodPulse {
+  0%, 100% { transform: scale(0.85); }
+  50% { transform: scale(1); }
+}
+
+.pauseOverlay {
+  position: absolute;
+  inset: 6px;
+  z-index: 5;
+  background: rgba(10, 12, 19, 0.88);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.dpad {
+  display: grid;
+  grid-template-areas:
+    ".    up   .   "
+    "left .    right"
+    ".    down .   ";
+  grid-template-columns: 48px 48px 48px;
+  grid-template-rows: 48px 48px 48px;
+  gap: 6px;
+}
+
+.dpadBtn {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: 12px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.dpadBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hint {
+  color: var(--text-faint);
+  font-size: 0.8rem;
+  text-align: center;
+}

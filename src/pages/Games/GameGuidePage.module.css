@@ -1,0 +1,107 @@
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px clamp(16px, 4vw, 32px) 60px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 0;
+  margin-bottom: 18px;
+}
+
+.backLink:hover {
+  color: var(--text-primary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.reward {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.card {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.cardIcon {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.cardLabel {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cardText {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.rulesBox {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-bottom: 26px;
+}
+
+.rulesTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rulesTitle svg {
+  color: var(--accent);
+}
+
+.rulesList {
+  padding-left: 20px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

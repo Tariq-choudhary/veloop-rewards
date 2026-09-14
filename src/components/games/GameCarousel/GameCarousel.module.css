@@ -1,0 +1,45 @@
+.wrapper {
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 6px 4px 18px;
+  scrollbar-width: thin;
+}
+
+.track [role='listitem'] {
+  scroll-snap-align: start;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-panel-line);
+  padding: 0;
+  transition: background 0.2s ease, width 0.2s ease;
+}
+
+.dotActive {
+  width: 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+}
+
+@media (max-width: 600px) {
+  .track {
+    gap: 12px;
+  }
+}

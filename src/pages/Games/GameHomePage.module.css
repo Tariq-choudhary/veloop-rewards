@@ -1,0 +1,172 @@
+.page {
+  max-width: 620px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.hero {
+  position: relative;
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.heroGhostIcon {
+  position: absolute;
+  right: -28px;
+  top: -28px;
+  color: rgba(255, 255, 255, 0.1);
+  transform: rotate(8deg);
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 12, 19, 0) 20%, rgba(10, 12, 19, 0.95) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: 20px clamp(16px, 4vw, 32px);
+}
+
+.artwork {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.panel {
+  padding: 20px clamp(16px, 4vw, 32px) 0;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.coinIcon {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+.toast {
+  background: rgba(255, 107, 94, 0.12);
+  border: 1px solid rgba(255, 107, 94, 0.4);
+  color: #ffb3ab;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.comingSoon {
+  background: var(--bg-panel);
+  border: 1px dashed var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.entryInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  margin-bottom: 22px;
+}
+
+.entryCost {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.entryCost svg {
+  color: var(--teal);
+}
+
+.rewardNote {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+.backLink:hover {
+  color: var(--text-primary);
+}

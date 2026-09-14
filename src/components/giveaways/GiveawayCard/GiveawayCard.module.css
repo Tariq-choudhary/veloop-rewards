@@ -1,0 +1,88 @@
+.card {
+  display: block;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 16px 32px -14px var(--glow);
+}
+
+.banner {
+  position: relative;
+  height: 140px;
+}
+
+.endingTag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 107, 94, 0.85);
+  color: #1a0805;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.categoryTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(10, 12, 19, 0.65);
+  color: var(--text-primary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.body {
+  padding: 16px 18px 18px;
+}
+
+.prize {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  min-height: 34px;
+}
+
+.footer {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--bg-panel-line);
+}
+
+.entryCost {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}

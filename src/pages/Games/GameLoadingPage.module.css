@@ -1,0 +1,92 @@
+.screen {
+  position: relative;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 700px 500px at 50% 40%, rgba(10, 12, 19, 0.15), rgba(10, 12, 19, 0.88));
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  animation: fadeScale 0.4s ease;
+}
+
+@keyframes fadeScale {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.artwork {
+  width: 88px;
+  height: 88px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--accent);
+  margin-bottom: 20px;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.loadingText {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 22px;
+}
+
+.progressTrack {
+  width: 220px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.12s linear;
+}
+
+.progressLabel {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.prep {
+  margin-top: 18px;
+  font-size: 0.82rem;
+  color: var(--text-faint);
+}

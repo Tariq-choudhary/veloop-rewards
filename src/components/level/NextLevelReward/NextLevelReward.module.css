@@ -1,0 +1,62 @@
+.card {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
+  height: fit-content;
+}
+
+.heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-panel-raised);
+  border: 1px dashed var(--bg-panel-line);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.lockIcon {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-panel-line);
+  color: var(--text-muted);
+}
+
+.rewardAmount {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 3px;
+}
+
+.rewardMeta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.xpRemaining {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--teal);
+  text-align: center;
+}
+
+.maxText {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

@@ -1,0 +1,31 @@
+.section {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  padding: 24px clamp(18px, 4vw, 32px);
+  margin-bottom: 48px;
+}
+
+.heading {
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.item {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.item::marker {
+  color: var(--text-faint);
+  font-weight: 700;
+}

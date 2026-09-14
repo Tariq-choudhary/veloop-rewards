@@ -1,0 +1,81 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.copy {
+  flex: 1 1 340px;
+  max-width: 560px;
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  padding: 22px 28px;
+}
+
+.details {
+  min-width: 180px;
+}
+
+.levelName {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.xpLine {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.xpLine strong {
+  color: var(--text-primary);
+}
+
+.xpPct {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+@media (max-width: 640px) {
+  .card {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,8 @@
+.page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px clamp(12px, 4vw, 32px) 60px;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+}

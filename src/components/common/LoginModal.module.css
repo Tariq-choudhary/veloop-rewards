@@ -1,0 +1,63 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(6, 7, 12, 0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 380px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  animation: pop 0.22s ease;
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--bg-panel-line);
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--gold-soft);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+}

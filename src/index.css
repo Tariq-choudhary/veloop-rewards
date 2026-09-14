@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-void: #0a0c13;
+  --bg-panel: #141826;
+  --bg-panel-raised: #1b2033;
+  --bg-panel-line: #2a2f45;
+
+  --gold: #f2b544;
+  --gold-soft: #f7ce7c;
+  --teal: #33e0c2;
+  --coral: #ff6b5e;
+
+  --text-primary: #f4f2ec;
+  --text-muted: #97a0b8;
+  --text-faint: #5c6379;
+
+  --radius-lg: 22px;
+  --radius-md: 14px;
+  --radius-sm: 8px;
+
+  --font-display: 'Unbounded', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(242, 181, 68, 0.10), transparent 60%),
+    radial-gradient(ellipse 800px 500px at 100% 10%, rgba(51, 224, 194, 0.08), transparent 55%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--gold-soft);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-panel-line);
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.veloop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.veloop-btn:active {
+  transform: scale(0.97);
+}
+
+.veloop-btn-primary {
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: #1a1305;
+  box-shadow: 0 8px 24px -8px rgba(242, 181, 68, 0.55);
+}
+
+.veloop-btn-primary:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 10px 28px -6px rgba(242, 181, 68, 0.7);
+}
+
+.veloop-btn-primary:disabled {
+  background: var(--bg-panel-line);
+  color: var(--text-faint);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.veloop-btn-ghost {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--bg-panel-line);
+}
+
+.veloop-btn-ghost:hover {
+  border-color: var(--text-muted);
+}
+
+.veloop-btn-danger {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1.5px solid var(--bg-panel-line);
+}

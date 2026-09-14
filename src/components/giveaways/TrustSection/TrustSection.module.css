@@ -1,0 +1,36 @@
+.section {
+  margin-bottom: 48px;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.badge {
+  text-align: center;
+  padding: 20px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--bg-panel-line);
+  background: var(--bg-panel);
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .badges {
+    grid-template-columns: 1fr;
+  }
+}

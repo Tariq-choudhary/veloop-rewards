@@ -1,0 +1,57 @@
+.hero {
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.balances {
+  display: flex;
+  gap: 10px;
+}
+
+.balancePill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+}
+
+.balanceLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+.balanceValue {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--teal);
+}
+
+.balancePillGold .balanceValue {
+  color: var(--gold);
+}

@@ -1,0 +1,16 @@
+.countdown {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+}
+
+.countdown strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.ended {
+  color: var(--text-faint);
+  font-weight: 600;
+}

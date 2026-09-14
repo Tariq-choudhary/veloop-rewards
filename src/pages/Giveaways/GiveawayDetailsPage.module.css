@@ -1,0 +1,240 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px clamp(16px, 4vw, 40px) 80px;
+}
+
+.back {
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.back:hover {
+  color: var(--text-primary);
+}
+
+.hero {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.banner {
+  position: relative;
+  height: 220px;
+}
+
+.endingTag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 107, 94, 0.85);
+  color: #1a0805;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.info {
+  padding: 24px clamp(18px, 4vw, 32px) 28px;
+}
+
+.category {
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.prize {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--bg-panel-line);
+}
+
+.metaStat {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.entryPanel {
+  background: var(--bg-panel);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: var(--radius-lg);
+  padding: 24px clamp(18px, 4vw, 32px) 28px;
+}
+
+.panelTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.currencyTabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.currencyTab {
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--bg-panel-line);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.currencyTabActive {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.quantityRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.quantityLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--bg-panel-line);
+  border-radius: 999px;
+  padding: 6px 8px;
+}
+
+.stepper button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: var(--bg-panel-line);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stepper button:disabled {
+  color: var(--text-faint);
+  cursor: not-allowed;
+}
+
+.stepper span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding: 10px 0;
+  border-top: 1px solid var(--bg-panel-line);
+}
+
+.summaryRow strong {
+  color: var(--text-primary);
+}
+
+.myEntries {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.error {
+  margin-top: 14px;
+  color: #ffb3ab;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.success {
+  margin-top: 14px;
+  color: var(--teal);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.enterBtn {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: #1a1305;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.enterBtn:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+
+.enterBtn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.enterBtn:disabled {
+  background: var(--bg-panel-line);
+  color: var(--text-faint);
+  cursor: not-allowed;
+}
